@@ -1,0 +1,28 @@
+This project was created by Michael Stokes with help from Will Sawyer and Brady Kurtz
+You will need to import the chat_database.sql file into Mysql.
+Also to upload large files you will want to add this to your Mysql my.ini (windows) or my.cnf (linux)
+The default is 1MB but if you want to use larger files you will want to use a larger size such as 100MB. Add this to my.ini:
+max_long_data_size=100000000
+Restart mysql service after changing this setting.
+2 test users have been added to start with.
+First test user: Mike Abbott
+user:mike
+password:mike
+
+Second test user: Test Test
+user:test
+password:test
+
+Features I want to add
+Remember the sound settings in the user table.
+Mike is typing ... so you know when they are typing
+Show a timer for when your session logs out
+When the user you are chatting with has logged out, show a message saying: Mike has logged out. If they just pressed stop Show: Mike has left the conversation.
+Allow you to chat with more than 1 person at a time in the same chat box o allwa user to be in more than one chat box at one time. Show the list of available people to chat with on the far left and add new chat boxes to the right each time you start chatting with a new user. To allow more than two people in a chat box I need to makea new table called chat_session where a list of people in each chat session is. And then instead of putting a user_id in the session table under the session_request_from column I will use session_chat_id to list all users in that chat session.
+Make a cron.php file that deletes the chat messages and chat sessions that are older than 1 day
+
+Technical bugs
+There is a message saying you have been logged out after 15 minutes if you login your user from a different browser. Change the message to say: You have been logged out.
+
+Features added:
+Play sound when someone chats with you and play a different sound for sending and receiving. I made a checkbox to allow the user to disable the sounds. I also made the sounds work on an Ipod 4th gen bt you have to click a link at the top of the page to initialize the sounds for IOS devices.

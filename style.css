@@ -1,0 +1,264 @@
+body{ 
+  font-family: Verdana; 
+  font-size: 10pt; 
+}
+#heading{
+	font-weight: bold;
+}
+label{
+  width:100px;
+  margin-bottom:10px;
+  font-weight:bold;
+  display: inline-block;
+}
+input{
+  margin-bottom:10px;
+}
+legend{
+  display:none;
+}
+fieldset{
+  border:0;
+  margin:0;
+  padding:0;
+}
+/* form buttons */
+.button-primary {
+  -moz-border-radius: 11px 11px 11px 11px; 
+  -webkit-border-radius:11px 11px 11px 11px; 
+  border-radius: 11px;
+  border: 1px solid #AAAAAA;
+  cursor: pointer;
+  font-family: "Lucida Grande",Verdana,Arial,"Bitstream Vera Sans",sans-serif;
+  font-size: 12px;
+  margin-top: -3px;
+  padding: 3px 10px;
+  text-decoration: none;
+  background-size: 100% 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#CCC), to(#DDD));
+  background: -moz-linear-gradient(top, #CCC, #DDD);
+  background: -o-linear-gradient(top, #CCC, #DDD);
+  background: -o-linear-gradient(bottom, #CCC, #DDD);
+  -moz-linear-gradient(center top , #EEEEEE, #BBBBBB) repeat scroll 0 0 transparent;
+  background-image:-webkit-gradient(linear, 0 0%, 0 100%, from(#EEEEEE), to(#BBBBBB));
+  -moz-box-shadow:
+    0px 1px 0px rgba(000,000,000,0),
+    inset 0px 0px 1px rgba(255,255,255,0.5);
+  -webkit-box-shadow:
+    0px 1px 0px rgba(000,000,000,0),
+    inset 0px 0px 1px rgba(255,255,255,0.5);
+  text-shadow:
+    0px -1px 0px rgba(000,000,000,0.7),
+    0px 1px 0px rgba(255,255,255,0.3);
+  color:#555;
+  font-weight: normal;
+}
+.button-primary:hover{
+  background: -webkit-gradient(linear, left top, left bottom, from(#BBB), to(#CCC));
+  background: -moz-linear-gradient(top, #BBB, #CCC);
+}
+
+.warning{
+  font-weight:bold;
+  color:red;
+}
+#userlist{
+  width:150px;
+  padding:10px;
+  font: normal normal normal 11pt Calibri, Cambria, Georgia, serif;
+  margin-bottom: 5px;
+}
+#userlist a{
+	margin:8px;
+	cursor: pointer;
+	cursor: hand;
+	
+}
+#userlist a:hover{
+  margin:8px;
+  text-decoration:underline;
+  cursor:pointer;
+}
+.username{
+  width:100px;
+  text-align:center;
+  color:black;
+  height:10px;
+  margin-bottom: 10px;
+}
+
+#leftside{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius:5px;
+	o-border-radius:5px;
+	-icab-border-radius:5px;
+	border-radius: 5px;
+	background:blue;
+	width: 200px;
+	padding: 10px;
+	padding-top: 10px;
+	float:left;
+}
+#leftsideinside{
+  -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius:5px;
+	o-border-radius:5px;
+	-icab-border-radius:5px;
+	background:white;
+	width: 180pxpx;
+	margin: 0 auto;
+	
+}
+.username a{
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+#userheading{
+	width: 195px;
+	padding-top: 5px;
+	margin: 0 auto;
+	color: white;
+	
+}
+#requestsContainer{
+  width:195px;
+  font: normal normal normal 11pt Calibri, Cambria, Georgia, serif;
+}
+
+#receivedheading{
+	width: 195px;
+	padding-top: 5px;
+	margin: 0 auto;
+	color: white;
+}
+#requestsReceived{
+  width:195px;
+  min-height: 50px;
+  font: normal normal normal 11pt Calibri, Cambria, Georgia, serif;
+  margin-bottom: 5px;
+
+  
+
+}
+
+#pendingheading{
+	width: 195px;
+	padding-top: 5px;
+	margin: 0 auto;
+	color: white;
+}
+#requestsPending{
+  width:195px;
+  min-height: 50px; 
+}
+
+
+#chatContainer{
+  width:315px;
+  height:450px;
+  padding:10px;
+  -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius:5px;
+	o-border-radius:5px;
+	-icab-border-radius:5px;
+	border-radius: 5px;
+	background:blue;
+  margin-top:13px;
+  display:none; /* or visible */
+}
+#chatWindow{
+  width:300px;
+  height:200px;
+  padding:5px;
+  border:1px solid blue;
+  background:white;;
+  word-wrap:break-word;
+  overflow-y: auto;
+  -moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius:5px;
+	o-border-radius:5px;
+	-icab-border-radius:5px;
+}
+#chatBoxContainer{
+	background:white;;
+	width:300px;
+	height:172px;
+	padding:5px;
+	border:1px solid blue;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius:5px;
+	-o-border-radius:5px;
+	-icab-border-radius:5px;
+	
+}
+#chatBox{
+  resize:none;
+  padding:2px;
+  /*margin-bottom:5px;*/
+}
+#chatBoxForm{
+  padding-left:1px;
+}
+#debug{
+  clear:both;
+  display: none;
+}
+
+#animate_upload_process{
+  display:none;  /* default is hidden but changes to visible */
+  position:relative;
+  top:-40px;
+  left:140px;
+}
+#fileAnimator{
+  height:25px;
+  padding:0;
+  width:25px;
+  position:relative;
+  bottom:21px;
+  float:right;
+}
+#upload_time_left, #upload_speed{
+  width:100px;
+  padding-right:10px;
+  font-size:9px;
+}
+#progressinner{
+  background-color:#000000;
+  height:10px;
+  overflow:hidden;
+  padding-right:2px;
+  position:relative;
+  text-align:right;
+  width:0;
+}
+#progressouter{
+  background-color:#6787E3;
+  border:2px inset black;
+  height:10px;
+  width:75px;
+}
+#percent_finished{
+  font-size:9px;
+}
+
+#uploadstats{
+  width:145px;
+  height:34px;
+}
+
+/* for IOS5 */
+#init {
+    position: absolute;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    z-index: 1000;
+}
